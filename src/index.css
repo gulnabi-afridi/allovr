@@ -1,0 +1,42 @@
+/*@tailwind base;*/
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .grad-1 {
+    background: linear-gradient(180deg, #ed1e79 0%, #fbb03b 100%);
+  }
+
+  .grad-2 {
+    background: linear-gradient(90deg, #ed1e79 0%, #fbb03b 100%);
+  }
+  .btn-outline-white {
+    @apply uppercase text-base text-white border-white font-space-grotesk px-6 h-[42px];
+  }
+
+  .btn-gradient {
+    background: linear-gradient(90deg, #ed1e79 0%, #fbb03b 100%);
+    @apply uppercase text-base text-white border-none font-space-grotesk px-6 h-[42px];
+  }
+  .desktop-radial-gradient{
+    background: radial-gradient(43.97% 32.61% at 52.4% 0%, rgba(237, 30, 121, 0.65) 0%, rgba(237, 30, 121, 0.4) 41.49%, rgba(237, 30, 121, 0) 100%), #040404;
+  }
+  .mobile-radial-gradient{
+    background: radial-gradient(84.11% 26.45% at 52.4% 0%, rgba(237, 30, 121, 0.65) 0%, rgba(237, 30, 121, 0.4) 41.49%, rgba(237, 30, 121, 0) 100%), #040404;
+  }
+  .yellow-gradient{
+    background: linear-gradient(180deg, #FBB03B 0%, rgba(251, 176, 59, 0) 100%);
+  }
+  .hero-bg {
+    @apply bg-[url(./assets/bgMobile.svg)] bg-bottom bg-cover lg:bg-[url(./assets/heroBg.svg)] bg-no-repeat lg:bg-right;
+    /*background: url(./assets/heroBg.svg) right no-repeat;*/
+    /*background-position: right;*/
+  }
+
+  /* Rotate Styles  */
+
+  .rotate-bg {
+    transform: rotate(180deg);
+    clip-path: polygon(0% 0, 100% 0, 97% 100%, 3% 100%);
+  }
+}
